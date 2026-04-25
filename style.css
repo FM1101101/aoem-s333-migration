@@ -160,6 +160,28 @@
         box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
     }
 
+    /* Button */
+    .btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        border-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #4338ca;
+    }
+
+    .btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
     /* Mobile Responsive Styles */
     @media (max-width: 640px) {
         .main-container {
