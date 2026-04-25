@@ -171,9 +171,9 @@
         border: none;
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  display: grid;
+  place-items: center;     /* Centers both horizontally and vertically */
+  height: 100vh;
     }
 
     .btn:hover {
