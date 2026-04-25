@@ -38,182 +38,197 @@
         <form action="https://formspree.io/f/xrerrjvb" method="POST">
             <!-- Title and Description -->
             <div class="form-header">
-                <h2 class="form-title">Event Registration</h2>
+                <h2 class="form-title">AOEM 333 - Migration Application</h2>
                 <p class="form-description">
-                    Fill in the form below to register for the event. All
-                    required fields are marked with *.
+                   AOEM Server 333 Migration Application
                 </p>
             </div>
 
             <!-- Basic Attendee Information -->
             <div class="form-group">
-                <label for="fullname" class="form-label">Full Name*</label>
+                <label for="fullname" class="form-label">Player Name*</label>
                 <input
                     type="text"
-                    name="fullname"
-                    id="fullname"
+                    name="playername"
+                    id="playername"
                     class="form-input"
                     required
                 />
             </div>
 
-            <div class="form-group">
-                <label for="email" class="form-label">Email Address*</label>
+                        <div class="form-group">
+                <label for="fullname" class="form-label">Player ID*</label>
                 <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="number"
+                    name="playerid"
+                    id="playerid"
                     class="form-input"
                     required
                 />
             </div>
 
-            <div class="form-group">
-                <label for="phone" class="form-label"
-                    >Phone Number (Optional)</label
-                >
-                <input type="text" name="phone" id="phone" class="form-input" />
-            </div>
-
-            <div class="form-group">
-                <label for="organization" class="form-label"
-                    >Organization / Company Name (Optional)</label
-                >
+                        <div class="form-group">
+                <label for="fullname" class="form-label">Current Server*</label>
                 <input
-                    type="text"
-                    name="organization"
-                    id="organization"
+                    type="number"
+                    name="currentserver"
+                    id="currentserver"
                     class="form-input"
+                    required
                 />
             </div>
 
-            <!-- Ticket Type / Registration Category -->
+                                    <div class="form-group">
+                <label for="fullname" class="form-label">Current Alliance Name*</label>
+                <input
+                    type="text"
+                    name="currentalliance"
+                    id="currentalliance"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+                                    <div class="form-group">
+                <label for="fullname" class="form-label">Current Power*</label>
+                <input
+                    type="number"
+                    name="currentpower"
+                    id="currentpower"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+           <div class="form-group">
+                <label for="fullname" class="form-label">Current Merit*</label>
+                <input
+                    type="number"
+                    name="currentmerit"
+                    id="currentmerit"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Communication Method -->
             <div class="form-group">
                 <label for="ticket-type" class="form-label"
-                    >Ticket Type / Registration Category*</label
+                    >Communication Method*</label
                 >
                 <select
-                    name="ticket-type"
-                    id="ticket-type"
+                    name="communication-method"
+                    id="communication-method"
                     class="form-select"
                     required
                 >
-                    <option value="general">General</option>
-                    <option value="vip">VIP</option>
-                    <option value="student">Student</option>
-                    <option value="speaker">Speaker</option>
-                    <option value="press">Press</option>
+                    <option value="discord">Discord</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="both-dc-wa">Both Discrod and WhatsApp</option>
                 </select>
             </div>
 
-            <!-- Number of Attendees -->
-            <div class="form-group">
-                <label for="num-attendees" class="form-label"
-                    >Number of Attendees (Optional)</label
-                >
+                       <div class="form-group">
+                <label for="fullname" class="form-label">Discord Username*</label>
                 <input
-                    type="number"
-                    name="num-attendees"
-                    id="num-attendees"
+                    type="text"
+                    name="dc-username"
+                    id="dc-username"
                     class="form-input"
+                    required
                 />
             </div>
 
-            <!-- Location Preferences -->
+                                   <div class="form-group">
+                <label for="fullname" class="form-label">WhatsApp Number*</label>
+                <input
+                    type="text"
+                    name="wa-number"
+                    id="wa-number"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Play Time -->
             <div class="form-group">
                 <label class="form-label"
-                    >Location Preferences (Optional)</label
+                    >Play Time</label
                 >
                 <div class="radio-group">
                     <label class="option-item">
                         <input
-                            type="radio"
-                            name="location-preference"
-                            id="physical-location"
-                            value="physical"
-                            class="form-radio"
+                            type="checkbox"
+                            name="play-time"
+                            id="01-utc"
+                            value="01-utc"
+                            class="form-checkbox"
                         />
-                        Physical
+                        01 UTC
                     </label>
                     <label class="option-item">
                         <input
-                            type="radio"
-                            name="location-preference"
-                            id="virtual-location"
-                            value="virtual"
-                            class="form-radio"
+                            type="checkbox"
+                            name="play-time"
+                            id="11-utc"
+                            value="11-utc"
+                            class="form-checkbox"
                         />
-                        Virtual
+                        11 UTC
+                    </label>
+                                        <label class="option-item">
+                        <input
+                            type="checkbox"
+                            name="play-time"
+                            id="19-utc"
+                            value="19-utc"
+                            class="form-checkbox"
+                        />
+                        19 UTC
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="preferred-session" class="form-label"
-                    >Select Preferred Session/City</label
+                <label for="best-main-marches" class="form-label"
+                    >Best Main Marches*</label
                 >
                 <select
-                    name="preferred-session"
-                    id="preferred-session"
+                    name="best-main-marches"
+                    id="best-main-marches"
                     class="form-select"
                 >
-                    <option value="session-1">Session 1 - New York</option>
-                    <option value="session-2">Session 2 - Los Angeles</option>
-                    <option value="session-3">Session 3 - Virtual</option>
+                    <option value="swordsmen">Swordsmen</option>
+                    <option value="cavalry">Cavalry</option>
+                    <option value="pikemen">Pikemen</option>
+                                        <option value="archers">Archers</option>
+                </select>
+            </div>
+            
+                        <div class="form-group">
+                <label for="best-main-marches" class="form-label"
+                    >Best Second Marches</label
+                >
+                <select
+                    name="best-main-marches"
+                    id="best-main-marches"
+                    class="form-select"
+                >
+                    <option value="swordsmen">Swordsmen</option>
+                    <option value="cavalry">Cavalry</option>
+                    <option value="pikemen">Pikemen</option>
+                                        <option value="archers">Archers</option>
                 </select>
             </div>
 
-            <!-- Optional Extras -->
             <div class="form-group">
-                <label for="dietary-preferences" class="form-label"
-                    >Dietary Preferences</label
-                >
-                <select
-                    name="dietary-preferences"
-                    id="dietary-preferences"
-                    class="form-select"
-                >
-                    <option value="none">None</option>
-                    <option value="vegetarian">Vegetarian</option>
-                    <option value="vegan">Vegan</option>
-                    <option value="gluten-free">Gluten-Free</option>
-                    <option value="halal">Halal</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="accessibility-needs" class="form-label"
-                    >Accessibility Needs</label
+                <label for="migration-reason" class="form-label"
+                    >Why do you want to migrate?</label
                 >
                 <textarea
-                    name="accessibility-needs"
-                    id="accessibility-needs"
+                    name="migration-reason"
+                    id="migration-reason"
                     rows="3"
-                    class="form-textarea"
-                ></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="promo-code" class="form-label"
-                    >Referral Code / Promo Code</label
-                >
-                <input
-                    type="text"
-                    name="promo-code"
-                    id="promo-code"
-                    class="form-input"
-                />
-            </div>
-
-            <!-- Comments or Questions -->
-            <div class="form-group">
-                <label for="comments" class="form-label"
-                    >Comments or Questions</label
-                >
-                <textarea
-                    name="comments"
-                    id="comments"
-                    rows="5"
                     class="form-textarea"
                 ></textarea>
             </div>
@@ -227,13 +242,13 @@
                     required
                 />
                 <label for="consent-checkbox" class="consent-label">
-                    I agree to the
-                    <a href="#">terms and conditions of registration</a>.
+                    I agree to follow all the
+                    <a href="#">server rules</a>.
                 </label>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="submit-btn">Register Now</button>
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
 </div>
