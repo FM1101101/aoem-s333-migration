@@ -1,16 +1,129 @@
-<!-- modify this form HTML and place wherever you want your form -->
 <form
-  action="https://formspree.io/f/xrerrjvb"
+  action="https://formspree.io/f/xrerrjvb}"
+  class="fs-form"
+  target="_top"
   method="POST"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <div class="fs-field">
+    <label class="fs-label" for="requester-name">Requester Name</label>
+    <input
+      class="fs-input"
+      id="requester-name"
+      name="requester-name"
+      placeholder="Enter the name of the individual or organization"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label">Requester Type</label>
+    <div class="fs-radio-group">
+      <div class="fs-radio-field">
+        <div class="fs-radio-wrapper">
+          <input
+            class="fs-radio"
+            id="requester-type-individual"
+            name="requester-type"
+            required
+            type="radio"
+            value="individual"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="requester-type-individual">
+            Individual
+          </label>
+        </div>
+      </div>
+      <div class="fs-radio-field">
+        <div class="fs-radio-wrapper">
+          <input
+            class="fs-radio"
+            id="requester-type-organization"
+            name="requester-type"
+            required
+            type="radio"
+            value="organization"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="requester-type-organization">
+            Organization
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="contact-person-name">
+      Contact Person Name
+    </label>
+    <input
+      class="fs-input"
+      id="contact-person-name"
+      name="contact-person-name"
+      placeholder="Enter the contact person&#x27;s name"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="contact-person-email">
+      Contact Person Email
+    </label>
+    <input
+      class="fs-input"
+      id="contact-person-email"
+      name="contact-person-email"
+      placeholder="Enter the contact person&#x27;s email address"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="contact-person-phone">
+      Contact Person Phone Number
+    </label>
+    <input
+      class="fs-input"
+      id="contact-person-phone"
+      name="contact-person-phone"
+      placeholder="Enter the contact person&#x27;s phone number"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="donation-type">Type of Donation Needed</label>
+    <select class="fs-select" id="donation-type" name="donation-type" required>
+      <option value="financial-support">Financial Support</option>
+      <option value="food-supplies">Food Supplies</option>
+      <option value="clothing">Clothing</option>
+      <option value="medical-supplies">Medical Supplies</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="beneficiaries-count">
+      Number of People Who Will Benefit
+    </label>
+    <input
+      class="fs-input"
+      id="beneficiaries-count"
+      name="beneficiaries-count"
+      placeholder="Enter the number of people who will benefit"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="donation-description">
+      Description of the Need for Donation
+    </label>
+    <textarea
+      class="fs-textarea"
+      id="donation-description"
+      name="donation-description"
+      placeholder="Explain why this donation is needed"
+      required
+    ></textarea>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
 </form>
