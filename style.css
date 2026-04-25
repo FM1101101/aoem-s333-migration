@@ -108,8 +108,8 @@
         margin-right: 0.5rem;
     }
 
-    /* Consent Checkbox Group */
-    .consent-group {
+    /* Checkbox Group */
+    .checkbox-group {
         display: flex;
         align-items: center;
         margin-bottom: 1.5rem;
@@ -121,18 +121,18 @@
         color: #4f46e5;
     }
 
-    .consent-label {
+    .checkbox-label {
         margin-left: 0.5rem;
         font-size: 0.875rem;
         color: #4b5563;
     }
 
-    .consent-label a {
+    .checkbox-label a {
         color: #4f46e5;
         text-decoration: none;
     }
 
-    .consent-label a:hover {
+    .checkbox-label a:hover {
         text-decoration: underline;
     }
 
