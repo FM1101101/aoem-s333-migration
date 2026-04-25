@@ -1,14 +1,14 @@
 <!-- Page Information -->
     <meta charset="utf-8">
     <title>AOEM 333 - Migration Application</title>
-    <meta name="description" content="AOEM Server 333 Migration Application">
+    <meta name="description" content="AOEM Empire 333 Migration Application">
     <meta name="author" content="Fuad Muhammad">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://fm1101101.github.io/aoem-s333-migration/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="AOEM 333 - Migration Application">
-    <meta property="og:description" content="AOEM Server 333 Migration Application">
+    <meta property="og:description" content="AOEM Empire 333 Migration Application">
     <meta property="og:image" content="https://fm1101101.github.io/aoem-s333-migration/images/featured-image.png">
 
     <!-- Twitter Meta Tags -->
@@ -16,7 +16,7 @@
     <meta property="twitter:domain" content="fm1101101.github.io">
     <meta property="twitter:url" content="https://fm1101101.github.io/aoem-s333-migration/">
     <meta name="twitter:title" content="AOEM 333 - Migration Application">
-    <meta name="twitter:description" content="AOEM Server 333 Migration Application">
+    <meta name="twitter:description" content="AOEM Empire 333 Migration Application">
     <meta name="twitter:image" content="https://fm1101101.github.io/aoem-s333-migration/images/featured-image.png">
 
     <!-- Mobile Specific Metas -->
@@ -40,7 +40,7 @@
             <div class="form-header">
                 <h2 class="form-title">AOEM 333 - Migration Application</h2>
                 <p class="form-description">
-                   AOEM Server 333 Migration Application
+                   AOEM Empire 333 Migration Application
                 </p>
             </div>
 
@@ -50,6 +50,7 @@
                 <input
                     type="text"
                     name="player-name"
+                    placeholder="e.g. foo"
                     id="player-name"
                     class="form-input"
                     required
@@ -61,6 +62,7 @@
                 <input
                     type="number"
                     name="player-id"
+                    placeholder="e.g. 5344140737488396215"
                     id="player-id"
                     class="form-input"
                     required
@@ -73,7 +75,12 @@
                     type="number"
                     name="current-server"
                     id="current-server"
+                    placeholder="e.g. 333"
                     class="form-input"
+                    min="288"
+                    max="349"
+                    minlength="19"
+                    maxlength="19"
                     required
                 />
             </div>
@@ -83,6 +90,7 @@
                 <input
                     type="text"
                     name="current-alliance"
+                    placeholder="e.g. NTR"
                     id="current-alliance"
                     class="form-input"
                     required
@@ -94,7 +102,9 @@
                 <input
                     type="number"
                     name="current-power"
+                    placeholder="e.g. 5344140737488396215"
                     id="current-power"
+                    min="1"
                     class="form-input"
                     required
                 />
@@ -105,7 +115,9 @@
                 <input
                     type="number"
                     name="current-merit"
+                    placeholder="e.g. 30000000"
                     id="current-merit"
+                    min="1"
                     class="form-input"
                     required
                 />
@@ -144,6 +156,7 @@
                 <input
                     type="text"
                     name="wa-number"
+                    placeholder="e.g. 6281234567890 (Country Code + Number)"
                     id="wa-number"
                     class="form-input"
                     required
@@ -227,6 +240,7 @@
                 >
                 <textarea
                     name="migration-reason"
+                    placeholder="Tell us why you want to join our empire"
                     id="migration-reason"
                     rows="3"
                     class="form-textarea"
