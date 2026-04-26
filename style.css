@@ -184,8 +184,12 @@ text-align: center;
     }
 
 /* Footer */
-    .p {
+    .footer {
        text-align: center;
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
     }
 
     /* Mobile Responsive Styles */
