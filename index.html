@@ -41,11 +41,12 @@
                    Age of Empires Mobile Empire 333 Migration Application
                 </p>
                 <a class="btn" href="https://discord.gg/qkRu5Mwx" target="_blank" rel="noopener">Join Discord Server</a>
+                <a class="btn" href="https://chat.whatsapp.com/I0godRXumEV7kexVGxHwCy" target="_blank" rel="noopener">Join WhatsApp Community</a>
             </div>
 
             <!-- Basic Attendee Information -->
             <div class="form-group">
-                <label for="fullname" class="form-label">Player Name*</label>
+                <label for="player-name" class="form-label">Player Name*</label>
                 <input
                     type="text"
                     name="player-name"
@@ -57,7 +58,7 @@
             </div>
 
                         <div class="form-group">
-                <label for="fullname" class="form-label">Player ID*</label>
+                <label for="player-id" class="form-label">Player ID*</label>
                 <input
                     type="number"
                     name="player-id"
@@ -71,7 +72,7 @@
             </div>
 
                         <div class="form-group">
-                <label for="fullname" class="form-label">Current Server*</label>
+                <label for="current-server" class="form-label">Current Server*</label>
                 <input
                     type="number"
                     name="current-server"
@@ -85,7 +86,7 @@
             </div>
 
                                     <div class="form-group">
-                <label for="fullname" class="form-label">Current Alliance Name*</label>
+                <label for="current-alliance" class="form-label">Current Alliance Name*</label>
                 <input
                     type="text"
                     name="current-alliance"
@@ -97,7 +98,7 @@
             </div>
 
                                     <div class="form-group">
-                <label for="fullname" class="form-label">Current Power*</label>
+                <label for="current-power" class="form-label">Current Power*</label>
                 <input
                     type="number"
                     name="current-power"
@@ -110,7 +111,7 @@
             </div>
 
            <div class="form-group">
-                <label for="fullname" class="form-label">Current Merit*</label>
+                <label for="current-merit" class="form-label">Current Merit*</label>
                 <input
                     type="number"
                     name="current-merit"
@@ -122,9 +123,27 @@
                 />
             </div>
 
+                        <div class="form-group">
+                <label for="migration-tier" class="form-label"
+                    >Migration Tier</label
+                >
+                <select
+                    name="migration-tier"
+                    id="migration-tier"
+                    class="form-select"
+                >
+                    <option value="mythic">Mythic</option>
+                    <option value="legend">Legend</option>
+                    <option value="herop">Hero</option>
+                    <option value="master">Master</option>
+                     <option value="elite">Elite</option>
+                     <option value="vanguard">Vanguard</option>
+                </select>
+            </div>
+
             <!-- Communication Method -->
             <div class="form-group">
-                <label for="ticket-type" class="form-label"
+                <label for="communication-method" class="form-label"
                     >Communication Method*</label
                 >
                 <select
@@ -140,7 +159,7 @@
             </div>
 
                        <div class="form-group">
-                <label for="fullname" class="form-label">Discord Username*</label>
+                <label for="dc-username" class="form-label">Discord Username*</label>
                 <input
                     type="text"
                     name="dc-username"
@@ -152,7 +171,7 @@
             </div>
 
                                    <div class="form-group">
-                <label for="fullname" class="form-label">WhatsApp Number*</label>
+                <label for="wa-number" class="form-label">WhatsApp Number*</label>
                 <input
                     type="text"
                     name="wa-number"
@@ -219,12 +238,12 @@
             </div>
             
                         <div class="form-group">
-                <label for="best-main-marches" class="form-label"
+                <label for="best-second-marches" class="form-label"
                     >Best Second Marches</label
                 >
                 <select
-                    name="best-main-marches"
-                    id="best-main-marches"
+                    name="best-second-marches"
+                    id="best-second-marches"
                     class="form-select"
                 >
                     <option value="swordsmen">Swordsmen</option>
